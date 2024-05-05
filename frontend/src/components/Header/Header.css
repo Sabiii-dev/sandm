@@ -1,0 +1,67 @@
+.header{
+    margin: 30px auto;
+    background-image: url("./header_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 34vw;
+    position: relative;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 6vw;
+    max-width: 50%;
+    animation: fadeIn 3s;
+}
+.header-content h1{
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.header-content p{
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: 1vw;   
+}
+.header-content button{
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-content{
+        max-width: 45%;
+    }
+}
+@media (max-width:880px) {
+    .header-content{
+        max-width: 55%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+    .header-content h1{
+        font-size: 20px;
+    }
+}

@@ -2,7 +2,57 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
+.mytitle{
+  text-align: center;
+  border: 2px solid black;
+ background-image: url("../../assets/animateee.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+  padding: 20px 30px;
+  width: 80%;
+  text-align: center;
+  margin: -10% auto 0;
+  border-radius: 40px;
+  box-shadow: 4px 5px 6px black;
+  animation: move 1s infinite alternate;
+}
+.mytitle .before{
+    font-size: 40px;
+  animation: neon-before 1.5s ease-in-out infinite alternate; /* Neon animation for .before */
+
+}
+.mytitle .auto-type{
+    font-size: 40px;
+    animation: neon-auto-type 1.5s ease-in-out infinite alternate; /* Neon animation for .auto-type */
+    border-bottom: 2px solid #FF6347;
+}
+@keyframes neon-before {
+    0% { color: #FFD700; } /* Neon gold color */
+    50% { color: #FF6347; } /* Neon tomato color */
+    100% { color: #FFD700; } /* Neon gold color */
+  }
+  
+  @keyframes neon-auto-type {
+    0% { color: #FF6347; } /* Neon tomato color */
+    50% { color: #FFD700; } /* Neon gold color */
+    100% { color: #FF6347; } /* Neon tomato color */
+  }
+
+.mytitle .explore-menu-text{
+    color: white;
+}
+@keyframes move{
+    0%{
+        transform: translatey(0);
+    }
+    100%{
+        transform: translatey(-10px);
+    }
+}
+
 .explore-menu h1{
     font-weight: 500;
     color: black;
@@ -10,7 +60,9 @@
 }
 .explore-menu-text{
     font-family: "Outfit", sans-serif;
-    max-width: 60%;
+    /* max-width: 60%; */
+   /* margin-left: 20%; */
+   text-align: center;
 }
 .explore-menu-list{
     display: flex;
@@ -20,6 +72,7 @@
     overflow-x: scroll;
     text-align: center;
     align-items: center;
+    margin-top: 70px;
 }
 .explore-menu-list::-webkit-scrollbar{
     display: none;
@@ -47,7 +100,21 @@
 }
 @media (max-width:1050px) {
     .explore-menu-text{
-        max-width: 100%;
+        /* max-width: 100%; */
         font-size: 14px;
+    }
+}
+@media (max-width:700px) {
+    .explore-menu-text{
+        display: none;
+    }
+    .explore-menu h1{
+        font-size: 20px;
+    }
+    .mytitle .before{
+        font-size: 20px;
+    }
+    .mytitle .auto-type{
+        font-size: 20px;
     }
 }

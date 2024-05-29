@@ -7,6 +7,9 @@
 a{
     text-decoration: none;
 }
+.navbar .my_logo_web{
+    width: 150px;
+}
 .navbar .logo{
     width: 150px;
 }
@@ -24,18 +27,50 @@ a{
     gap: 30px;
     align-items: center;
 }
+
+
 .navbar .navbar-right button{
-    padding: 10px 15px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: #FF6347;
     background-color: transparent;
-    color: black;
-    border-radius: 30px;
+    border: 2px solid #FF6347;
+    border-radius: 15px;
     cursor: pointer;
-    border: 1px solid orangered;
-    transition: .5s;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
 }
-.navbar .navbar-right button:hover{
-    background-color: wheat;
+
+.navbar .navbar-right button:hover {
+    box-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347;
 }
+
+.navbar .navbar-right button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #FF6347;
+    animation: neon-border 1.5s infinite;
+}
+
+@keyframes neon-border {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FF6347;
+    }
+}
+
 .navbar .active{
     padding-bottom: 2px;
     border-bottom: 2px solid orangered;
@@ -63,7 +98,7 @@ a{
     .navbar-right {
         gap: 30px;
     }
-    .navbar-right img {
+    .navbar-right .icon-get {
         width: 22px;
     }
     .navbar-right button {
@@ -135,4 +170,5 @@ a{
 .nav-profile-dropdown img{
     width: 20px;
 }
+
 

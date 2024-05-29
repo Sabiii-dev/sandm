@@ -1,17 +1,19 @@
 .header{
     margin: 30px auto;
-    background-image: url("./header_img.png");
+    background-image: url("../../assets/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 34vw;
     position: relative;
+    border-radius: 40px;
+    box-shadow: 4px 3px 3px black;
 }
 .header-content{
     display: flex;
     flex-direction: column;
     gap: 30px;
     position: absolute;
-    bottom: 10%;
+    bottom: 40%;
     left: 6vw;
     max-width: 50%;
     animation: fadeIn 3s;
@@ -20,21 +22,33 @@
     font-family: "Outfit", sans-serif;
     font-weight: bold;
     color: white;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000; 
+           
+    /* background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODNpemsxZTN5d2dnb2M0MjRzbTZnc3d6bzQwaXN5YmEybXB0MGJxcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEhmP1i8wzdgx2vrW/giphy.gif);
+    color: transparent;
+    -webkit-background-clip: text; */
 }
-.header-content p{
+/* .header-content p{
     font-family: "Outfit", sans-serif;
     color: white;
-    font-size: 1vw;   
+    font-size: 1vw; 
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000 
 }
 .header-content button{
     width: fit-content;
     padding: 10px 15px;
-    background-color: white;
-    color: black;
     border-radius: 30px;
     border: 2px solid black;
     cursor: pointer;
-}
+} */
 @keyframes fadeIn {
     0%{
         opacity: 0;

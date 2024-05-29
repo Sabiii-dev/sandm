@@ -1,0 +1,136 @@
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #cc7a00;
+}
+
+/* Existing styles */
+
+.allfData, .alluData, .allorders {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.header, .header2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 90px;
+    margin: 10px 0;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.header2 {
+    grid-template-columns: 2fr 2fr;
+}
+
+.header p, .header2 p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff9900;
+}
+
+.allFoodData, .allUsersData {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 90px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+
+.allFoodData p, .allUsersData p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.allUsersData {
+    grid-template-columns: 2fr 2fr;
+}
+
+.order-item1 {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid #ff9900;
+    padding: 20px;
+    margin: 30px 0;
+    font-size: 14px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.order-item1 img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 4px;
+}
+
+.order-item-food1, .order-item-name1 {
+    font-weight: 500;
+}
+
+.order-item-name1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.order-item-address1 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .header, .header2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .allFoodData, .allUsersData {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .order-item1 {
+        grid-template-columns: 1fr;
+        font-size: 12px;
+        padding: 15px;
+    }
+    .order-item1 img {
+        width: 40px;
+    }
+}
+
+.order-item1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-item1 p {
+    margin: 0;
+}
+
+.order-item-phone {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.order-item1 p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff9900;
+}

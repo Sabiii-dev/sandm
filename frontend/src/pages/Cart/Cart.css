@@ -39,7 +39,7 @@
 .cart-total hr{
     margin: 10px 0;
 }
-.cart-total button{
+/* .cart-total button{
     border: none;
     color: white;
     background-color: tomato;
@@ -47,7 +47,7 @@
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 .cart-promocode{
     flex: 1;
 }
@@ -84,3 +84,53 @@
         justify-content: start;
     }
 }
+
+
+
+
+
+
+.cart-total button{
+    font-size: 15px;
+    padding: 10px 10px;
+    color: #FF6347;
+    background-color: transparent;
+    border: 2px solid #FF6347;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cart-total button:hover {
+    box-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347;
+}
+
+.cart-total button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #FF6347;
+    animation: neon-border 1.5s infinite;
+}
+
+@keyframes neon-border {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #FF6347;
+    }
+}
+

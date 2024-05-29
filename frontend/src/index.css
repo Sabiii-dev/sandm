@@ -5,6 +5,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Outfit", sans-serif;
+
+  /* background-image: url('assets/proj_bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%; */
 }
 .app{
   width: 80%;

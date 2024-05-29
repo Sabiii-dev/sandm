@@ -20,6 +20,9 @@
 .footer-content-left img{
     width: 100px;
 }
+.footer-content-left .my_logo_web{
+    width: 200px;
+}
 .footer-content-left , .footer-content-center , .footer-content-right{
     display: flex;
     flex-direction: column;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Add.css"
 import { assets } from '../../assets/assets'
-import axios from "axios"
+import axios from 'axios'
 import { toast } from 'react-toastify'
 
 const Add = ({url}) => {
@@ -51,7 +51,7 @@ const Add = ({url}) => {
 
     <div className='add'>
 
-    <form className='flex-col' onSubmit={onSubmitHandler}>
+    <form onSubmit={onSubmitHandler} className='flex-col'>
     <div className='add-image-upload flex-col'>
     <p>Upload image</p>
     <label htmlFor='image'>
@@ -75,7 +75,7 @@ const Add = ({url}) => {
     <option value='Salad'>Salad</option>
     <option value='Rolls'>Rolls</option>
     <option value='Deserts'>Deserts</option>
-    <option value='SandWitch'>SandWitch</option>
+    <option value='Sandwich'>Sandwich</option>
     <option value='Cake'>Cake</option>
     <option value='Pure Veg'>Pure Veg</option>
     <option value='Pasta'>Pasta</option>

@@ -19,10 +19,10 @@ const Sidebar = () => {
         <img src={assets.order_icon} alt=''/>
         <p>Orders</p>
         </NavLink>
-        <NavLink to='/alldata' className='sidebar-option'>
+        {/* <NavLink to='/alldata' className='sidebar-option'>
         <img src={assets.order_icon} alt=''/>
         <p>My Data</p>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   )

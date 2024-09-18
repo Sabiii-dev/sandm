@@ -59,9 +59,14 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
-import bhali_profile from './bhali_profile.png'
+// import bhali_profile from './bhali_profile.png'
 import header_pic from './header-pic.jpeg'
-import my_logo_web from './my-logo-web.png'
+// import my_logo_web from './my-logo-web.png'
+import my_web_logo from './my_web_logo.png'
+import my_web_banner from './my_web_banner.jpg'
+import oil1 from './oil1.png'
+import oil2 from './oil2.png'
+import oil3 from './oil3.png'
 
 export const assets = {
     // logo,
@@ -83,9 +88,14 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    bhali_profile,
+    // bhali_profile,
     header_pic,
-    my_logo_web
+    // my_logo_web,
+    my_web_logo,
+    my_web_banner,
+    oil1,
+    oil2,
+    oil3
 }
 
 export const menu_list = [

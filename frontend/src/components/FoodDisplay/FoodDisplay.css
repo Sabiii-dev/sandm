@@ -2,9 +2,16 @@
 .food-display{
     margin-top: 30px;
 }
-.food-display h1{
-    font-weight: 500;
+.food-display h2{
     font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    /* color: white; */
+    /* text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;  */
+    font-size: 30px;
 }
 .food-display-list{
     display: grid;
@@ -13,3 +20,32 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+/* Loading spinner styles */
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading-spinner p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: lightpurple;
+  }
+  
+  .spinner-circle {
+    border: 8px solid rgba(200, 150, 250, 0.3); /* Light purple translucent */
+    border-top: 8px solid rgba(200, 150, 250, 1); /* Solid light purple */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  /* Add the spinning animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

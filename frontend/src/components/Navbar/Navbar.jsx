@@ -19,11 +19,11 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-      <Link to="/"><img className='my_logo_web' src={assets.my_logo_web} alt='logo'/></Link>
+      <Link to="/"><img className='my_logo_web' src={assets.my_web_logo} alt='logo'/></Link>
       <ul className='navbar-menu'>
         <Link to='/' onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</Link>
-        <a href='#explore-menu' onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</a>
-        <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
+        <a href='#food-items' onClick={()=>setMenu("menu")} className={menu==="menu"?"active":""}>menu</a>
+        <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>How to use</a>
         <a href='#footer' onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>contact-us</a>
       </ul>
       <div className='navbar-right'>
@@ -34,7 +34,7 @@ const Navbar = ({setShowLogin}) => {
         </div>
         {!token?<button onClick={()=>setShowLogin(true)}>Sign In</button>
         : <div className='navbar-profile'>
-        <img className='bhali-img' src={assets.bhali_profile} alt=''/>
+        <img className='bhali-img' src={assets.profile_icon} alt=''/>
         <div className='nav-profile-dropdown'>
         <ul>
           <li onClick={()=>navigate('/myorders')}><img src={assets.bag_icon}/><p>Orders</p></li>

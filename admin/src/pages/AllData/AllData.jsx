@@ -70,7 +70,7 @@ const AllData = () => {
                         <div key={index} className='allFoodData'>
                             <p>{item.name}</p>
                             <p>{item.category}</p>
-                            <p>${item.price}</p>
+                            <p>RS {item.price}</p>
                         </div>
                     ))}
                 </div>
@@ -97,9 +97,9 @@ const AllData = () => {
                                     <p className='order-item-food1'>
                                         {order.items.map((item, itemIndex) => {
                                             if (itemIndex === order.items.length - 1) {
-                                                return `${item.name} x ${item.quantity}`;
+                                                return `RS {item.name} x RS {item.quantity}`;
                                             } else {
-                                                return `${item.name} x ${item.quantity}, `;
+                                                return `RS {item.name} x RS {item.quantity}, `;
                                             }
                                         })}
                                     </p>
@@ -111,7 +111,7 @@ const AllData = () => {
                                     <p className='order-item-phone'>{order.address.phone}</p>
                                 </div>
                                 <p>Items: {order.items.length}</p>
-                                <p>${order.amount}</p>
+                                <p>RS {order.amount}</p>
                             </div>
                         ))}
                     </div>

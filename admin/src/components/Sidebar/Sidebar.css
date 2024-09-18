@@ -28,6 +28,6 @@
     }
 }
 .sidebar-option.active{
-    background-color: #fff0ed;
-    border-color: tomato;
+    background-color: #c9a3f3;
+    border-color: rgb(121, 0, 191);
 }

@@ -93,9 +93,9 @@
 .cart-total button{
     font-size: 15px;
     padding: 10px 10px;
-    color: #FF6347;
+    color: rgb(121, 0, 191);
     background-color: transparent;
-    border: 2px solid #FF6347;
+    border: 2px solid rgb(121, 0, 191);
     border-radius: 15px;
     cursor: pointer;
     outline: none;
@@ -109,7 +109,7 @@
 }
 
 .cart-total button:hover {
-    box-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347;
+    box-shadow: 0 0 10px rgb(121, 0, 191), 0 0 20px rgb(121, 0, 191), 0 0 30px rgb(121, 0, 191), 0 0 40px rgb(121, 0, 191);
 }
 
 .cart-total button::before {
@@ -121,7 +121,7 @@
     bottom: -2px;
     border: 2px solid transparent;
     border-radius: 15px;
-    box-shadow: 0 0 10px #FF6347;
+    box-shadow: 0 0 10px rgb(121, 0, 191);
     animation: neon-border 1.5s infinite;
 }
 
@@ -130,7 +130,7 @@
         border-color: transparent;
     }
     50% {
-        border-color: #FF6347;
+        border-color: rgb(121, 0, 191);
     }
 }
 

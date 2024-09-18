@@ -21,7 +21,7 @@
     width: 100px;
 }
 .footer-content-left .my_logo_web{
-    width: 200px;
+    width: 100px;
 }
 .footer-content-left , .footer-content-center , .footer-content-right{
     display: flex;
@@ -33,9 +33,11 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
-.footer-social-icons img{
-    width: 40px;
-    margin-right: 20px;
+.footer-social-icons{
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
     cursor: pointer;
 }
 .footer hr{

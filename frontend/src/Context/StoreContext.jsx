@@ -10,7 +10,7 @@ const StoreContextProvider = (props)=>{
     const [cartItems , setcartItems] = useState({});
     
 
-    const url = "http://localhost:4000"
+    const url = "https://sandm.onrender.com"
 
     const [token,setToken] = useState("")
 

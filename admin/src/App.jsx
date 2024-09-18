@@ -8,11 +8,11 @@ import List from './pages/List/List';
 import Orders from './pages/Orders/Orders';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AllData from './pages/AllData/AllData';
+// import AllData from './pages/AllData/AllData';
 
 const App = () => {
 
-  const url = "http://localhost:4000" ;
+  const url = "https://sandm.onrender.com" ;
 
   return (
     <div>

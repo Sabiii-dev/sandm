@@ -12,7 +12,7 @@ import DataRouter from "./routes/DataRoute.js";
 //app config
 
 const app = express();
-const port = 4000;
+const port = 4000 || process.env.PORT;
 
 //middleware
 app.use(express.json())

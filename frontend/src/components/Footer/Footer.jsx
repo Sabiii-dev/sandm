@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='footer-content'>
         <div className='footer-content-left'>
         <img className='my_logo_web' src={assets.my_web_logo} />
-        <p>At S&M, we bring you 100% pure, high-quality natural oil designed to enhance your skin, hair, and overall wellness. Packed with essential nutrients and antioxidants, this versatile oil is a must-have for your daily routine.</p>
+        <p>Welcome to S&M Organics, where we believe in the power of nature to nourish and rejuvenate your hair. Our premium hair oils are meticulously crafted from a blend of organic herbs and natural oils, designed to promote healthy growth, enhance shine, and restore vitality. At S&M Organics, we prioritize quality and sustainability, ensuring that every bottle is free from harmful chemicals and filled with the goodness of nature. Discover the difference of organic hair care and let your hair thrive with the healing properties of our unique formulations.</p>
 <div className='footer-social-icons'>
 <a href="https://www.instagram.com/sandm._.organics?igsh=MWxkeTlvZzd0YmFheg==" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} size="2x" style={{ marginRight: "10px" }} />

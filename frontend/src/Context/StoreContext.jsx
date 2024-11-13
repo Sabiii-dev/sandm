@@ -6,8 +6,53 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
     const [cartItems, setcartItems] = useState({});
-    const url = "https://sandm.onrender.com";
+    const url = "http://localhost:4000";
     const [token, setToken] = useState("");
+
+    // Add placeOrder function to context
+    const placeOrder = async (orderData) => {
+        try {
+            let orderItems = [];
+            food_list.forEach((item) => {
+                if (cartItems[item._id] > 0) {
+                    orderItems.push({
+                        ...item,
+                        quantity: cartItems[item._id]
+                    });
+                }
+            });
+
+            const orderPayload = {
+                items: orderItems,
+                amount: getTotalCartAmount(),
+                customerName: `${orderData.firstName} ${orderData.lastName}`,
+                customerEmail: orderData.email,
+                customerPhone: orderData.phone,
+                address: {
+                    street: orderData.street,
+                    city: orderData.city,
+                    state: orderData.state,
+                    zipcode: orderData.zipcode,
+                    country: orderData.country
+                },
+                userId: token ? localStorage.getItem("userId") : null
+            };
+
+            // If user is logged in, include token in headers
+            const config = token ? { headers: { token } } : {};
+            
+            const response = await axios.post(`${url}/api/order/place`, orderPayload, config);
+            
+            if (response.data.success) {
+                setcartItems({}); // Clear cart after successful order
+                return { success: true, orderId: response.data.orderId };
+            }
+            return { success: false, message: "Failed to place order" };
+        } catch (error) {
+            console.error("Error placing order:", error);
+            return { success: false, message: error.message };
+        }
+    };
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
@@ -76,6 +121,7 @@ const StoreContextProvider = (props) => {
         url,
         token,
         setToken,
+        placeOrder, // Add placeOrder to context
     };
 
     return (

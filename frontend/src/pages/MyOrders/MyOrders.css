@@ -17,6 +17,54 @@
     color: #454545;
     border: 1px solid rgb(121, 0, 191);
 }
+.search-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.search-container form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-container select,
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-container select {
+    min-width: 120px;
+}
+
+.search-container input {
+    flex: 1;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background: #45a049;
+}
+
+.search-container button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
 .my-orders-order img{
     width: 50px;
 }

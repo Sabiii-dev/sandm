@@ -14,6 +14,8 @@ const Orders = ({url}) => {
     const response = await axios.get(url+'/api/order/list')
     if (response.data.success) {
       setOrders(response.data.data)
+      console.log(orders);
+      
     }
     else{
       toast.error('Error')
@@ -32,6 +34,7 @@ const Orders = ({url}) => {
 
   useEffect(()=>{
     fetchAllOrders()
+    
   },[])
 
 
@@ -52,12 +55,12 @@ const Orders = ({url}) => {
           }
         })}
       </p>
-      <p className='order-item-name'>{order.address.firstName+" "+order.address.lastName}</p>
+      <p className='order-item-name'>{order.customerName}</p>
      <div className='order-item-address'>
      <p className='order-item-address'>{order.address.street+","}</p>
       <p className='order-item-address'>{order.address.city+" , "+order.address.state+" , "+order.address.country+" , "+order.address.zipcode}</p>
      </div>
-     <p className='order-item-phone'>{order.address.phone}</p>
+     <p className='order-item-phone'>{order.customerPhone}</p>
     </div>
     <p>Items : {order.items.length}</p>
     <p>RS {order.amount}</p>

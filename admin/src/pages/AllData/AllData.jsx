@@ -11,7 +11,7 @@ const AllData = () => {
 
     const foodData = async () => {
         try {
-            const response = await axios.get("http://localhost:4000/api/alldata/fooddata");
+            const response = await axios.get("https://sandm.onrender.com/api/alldata/fooddata");
             setAllFood(response.data.allFoods); 
         } catch (error) {
             console.log(error);
@@ -20,7 +20,7 @@ const AllData = () => {
 
     const userData = async () => {
         try {
-            const response2 = await axios.get("http://localhost:4000/api/alldata/userdata");
+            const response2 = await axios.get("https://sandm.onrender.com/api/alldata/userdata");
             setAllUsers(response2.data.allUsers);
         } catch (error) {
             console.log(error);
@@ -29,7 +29,7 @@ const AllData = () => {
 
     const orderData = async () => {
         try {
-            const response3 = await axios.get("http://localhost:4000/api/alldata/orderdata");
+            const response3 = await axios.get("https://sandm.onrender.com/api/alldata/orderdata");
             console.log(response3.data.allOrders);
             setAllOrders(response3.data.allOrders);
         } catch (error) {

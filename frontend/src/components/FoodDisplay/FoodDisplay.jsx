@@ -11,7 +11,6 @@ const FoodDisplay = () => {
         if (food_list.length > 0) {
             setLoading(false)
         }
-        console.log(food_list)
     }, [food_list])
 
     return (

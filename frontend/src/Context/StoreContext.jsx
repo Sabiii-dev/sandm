@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
     const [cartItems, setcartItems] = useState({});
-    const url = "https://sandm.onrender.com";
+    const url = "http://localhost:4000" || "https://sandm.onrender.com";
     const [token, setToken] = useState("");
 
     // Add placeOrder function to context
@@ -92,6 +92,7 @@ const StoreContextProvider = (props) => {
 
     const fetchFoodList = async () => {
         const response = await axios.get(`${url}/api/food/list`);
+        console.log(response.data.data)
         setFoodList(response.data.data);
     };
 

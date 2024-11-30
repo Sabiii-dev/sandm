@@ -1,7 +1,7 @@
 import { v2 as cloudinary } from 'cloudinary';
 import { CloudinaryStorage } from 'multer-storage-cloudinary';
 
-// Cloudinary configuration
+// Cloudinary configurationnnn
 cloudinary.config({
     cloud_name: "dic1img0v",
     api_key: "724648671984992",

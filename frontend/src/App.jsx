@@ -12,8 +12,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-// import { Verify } from 'crypto'
-
 
 const App = () => {
 

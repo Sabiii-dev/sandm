@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
     const [cartItems, setcartItems] = useState({});
-    const url = "http://localhost:4000" || "https://sandm.onrender.com";
+    const url = "https://sandm.onrender.com";
     const [token, setToken] = useState("");
 
     // Add placeOrder function to context

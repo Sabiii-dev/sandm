@@ -78,7 +78,7 @@ const loginuserOrders = async (req, res) => {
     console.log
     const orders = await orderModel.find({ userId: req.body.userId });
 
-    console.log("orders",orders)
+    // console.log("orders",orders)
     res.json({ success: true, data: orders });
   } catch (error) {
     console.log(error);
